@@ -1,0 +1,88 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+	<fieldset>
+		<legend>Questionário 2 de Arquitetura e Organização de Computadores</legend>
+		
+		<form name="form2"> 
+			<p>1. Marque a opção incorreta:</p>
+			<input type="radio" id="AO2a" name="p1" value="1">
+			<label for="AO2a">Sistema decimal utiliza 10 dígitos, o 1 e o 0.</label><br/>
+			
+			<input type="radio" id="AO2b" name="p1" value="2">
+			<label for="AO2b">Sistema binário utiliza 10<sub>(2)</sub> dígitos, em binário.</label><br/>
+			
+			<input type="radio" id="AO2c" name="p1" value="3">
+			<label for="AO2c">Sistema octal possui 8 digitos, de 0 a 7.</label><br/>
+			
+			<input type="radio" id="AO2d" name="p1" value="4">
+			<label for="AO2d">Sistema hexadecimal utiliza letras e números para contar até 15.</label><br/>
+			
+			<p>2. Marque qual opção abaixo não é um número em binário.</p>
+			<input type="radio" id="AO2e" name="p2" value="1">
+			<label for="AO2e">00000000.</label>
+			
+			<input type="radio" id="AO2f" name="p2" value="2">
+			<label for="AO2f">01010111.</label>
+			
+			<input type="radio" id="AO2g" name="p2" value="3">
+			<label for="AO2g">10.00001.</label>
+			
+			<input type="radio" id="AO2h" name="p2" value="4">
+			<label for="AO2h">10180010.</label><br/>
+			
+			<p>3. Em relação aos binários, marque a opção incorreta:</p>
+			<input type="radio" id="AO2i" name="p3" value="1">
+			<label for="AO2i">Como utilizamos zeros e uns, a quantidade de números que podem ser representados é limitada.</label><br/>
+			
+			<input type="radio" id="AO2j" name="p3" value="2">
+			<label for="AO2j">Utilizamos zeros e uns porque o computador em sua base só consegue entender binário.</label><br/>
+			
+			<input type="radio" id="AO2k" name="p3" value="3">
+			<label for="AO2k">Podemos realizar operações matemáticas com números binários: soma, subtração, divisão e multiplicação.</label><br/>
+			
+			<input type="radio" id="AO2l" name="p3" value="4">
+			<label for="AO2l">Eu posso contar até o infinito utilizando binários.</label><br/>
+			
+			<p>4. Quais dispositivos abaixo não utilizam binário?</p>
+			<input type="radio" id="AO2m" name="p4" value="1">
+			<label for="AO2m">DVD.</label>
+			
+			<input type="radio" id="AO2n" name="p4" value="2">
+			<label for="AO2n">CD.</label>
+			
+			<input type="radio" id="AO2o" name="p4" value="3">
+			<label for="AO2o">Pendrive.</label>
+			
+			<input type="radio" id="AO2p" name="p4" value="4">
+			<label for="AO2p">Caixas de som.</label>
+			<br/>
+			
+			<p>5. Marque a afirmativa correta:</p>
+			<input type="radio" id="AO2q" name="p5" value="1">
+			<label for="AO2q">Para aumentar o valor do binário, basta acrescentar zeros à esquerda.</label><br/>
+			
+			<input type="radio" id="AO2r" name="p5" value="2">
+			<label for="AO2r">Só posso usar o binário para contar até 31<sub>(10)</sub> = 11111<sub>(2)</sub>.</label><br/>
+			
+			<input type="radio" id="AO2s" name="p5" value="3">
+			<label for="AO2s">Com binários não há limites na representação de numeros e textos.</label><br/>
+			
+			<input type="radio" id="AO2t" name="p5" value="4">
+			<label for="AO2t">O sistema binário é o único sistema numérico utilizado nos computadores.</label><br/>
+
+			<input class="botao" type="button" value="Corrigir" onclick="return validar([1, 4, 1, 4, 3])">
+			<input class="botao" type="reset" value="Limpar">
+		</form>
+	</fieldset>
+	
+	<br><br>
+	<script src="script/jquery-3.1.0.js"></script>
+	<script src="script/validForm.js"></script>
+</body>
+</html>
+
