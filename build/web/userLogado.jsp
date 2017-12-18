@@ -43,7 +43,7 @@
         <!-- Navbar -->
         <div class="w3-top">
             <div class="w3-bar w3-black w3-card">
-                <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars fa-2x"></i></a>
+                <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" title="Toggle Navigation Menu"><i class="fa fa-bars fa-2x"></i></a>
                 <a href="#" class="w3-bar-item"><img src="imagens/logo.png" style="width: 80px;"></a>
                 <div class="w3-dropdown-hover w3-hide-small" style="float: right;">
                     <div class="w3-container w3-card w3-white w3-margin-bottom" style="margin: 10px">
@@ -63,21 +63,16 @@
             </div>
         </div>
 
-
-        <!-- Navbar on small screens -->
         <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:60px">
             <a href="#certificados" class="w3-bar-item w3-button w3-padding-24 w3-hide-small">Certificados</a>
             <a href="#contact" class="w3-bar-item w3-button w3-padding-24">Cursos</a>
             <a href="#" class="w3-bar-item w3-button w3-padding-24">Sair</a>
         </div>
 
-        <!-- Page Container -->
         <div class="w3-content w3-margin-top w3-padding-64" style="max-width:1400px; padding-top: 100px !important">
 
-            <!-- The Grid -->
             <div class="w3-row-padding">
 
-                <!-- Left Column -->
                 <div class="w3-third">
 
                     <div class="w3-white w3-text-grey w3-card-4">
@@ -117,8 +112,6 @@
                             </div>
                             <br>
 
-                            <!---Certificados--->
-
                             <div id="certificados" style="visibility:hidden;"></div>
 
                             <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-deep-orange"></i>Certificados</b></p>
@@ -126,25 +119,15 @@
                             <div class="w3-light-grey w3-round-xlarge">
                                 <a href="certificado.html" class="w3-deep-orange w3-button w3-padding-12 w3-hide-small">Emitir Certificado</a>
                             </div>
-                            <p>Metodologia Científica</p>
-                            <div class="w3-light-grey w3-round-xlarge">
-                                <a href="" class="w3-deep-orange w3-button w3-padding-12 w3-hide-small">Emitir Certificado</a>
-                            </div>
                             <br>
                         </div>
                     </div>
                     <br>
-
-
-                    <!-- End Left Column -->
                 </div>
 
-                <!-- Right Column -->
                 <div class="w3-twothird">
-
-
                     <div  class="w3-container w3-card w3-white w3-margin-bottom">
-                        <h1><button onclick="myFunction('aoc')" class="w3-button w3-hover-white w3-block w3-white w3-center">Arquitetura e organização de computadores</button></h1>
+                        <h1><button onclick="collapse('aoc')" class="w3-button w3-hover-white w3-block w3-white w3-center">Arquitetura e organização de computadores</button></h1>
                         <div id="aoc" class=" w3-hide">
                             <div class="w3-container w3-half">
                                 <h5 class="w3-opacity"><b>Aula 1</b></h5>
@@ -162,7 +145,7 @@
                     </div>
 
                     <div  class="w3-container w3-card w3-white w3-margin-bottom">
-                        <h1><button onclick="myFunction('so')" class="w3-button w3-hover-white w3-block w3-white w3-center">Sistemas Operacionais</button></h1>
+                        <h1><button onclick="collapse('so')" class="w3-button w3-hover-white w3-block w3-white w3-center">Sistemas Operacionais</button></h1>
                         <div id="so" class=" w3-hide">
                             <div class="w3-container w3-half">
                                 <h5 class="w3-opacity"><b>Aula 1</b></h5>
@@ -179,9 +162,8 @@
                         </div>
                     </div>
 
-
                     <div  class="w3-container w3-card w3-white w3-margin-bottom">
-                        <h1><button onclick="myFunction('logica')" class="w3-button w3-hover-white w3-block w3-white w3-center">Lógica de programação</button></h1>
+                        <h1><button onclick="collapse('logica')" class="w3-button w3-hover-white w3-block w3-white w3-center">Lógica de programação</button></h1>
                         <div id="logica" class=" w3-hide">
                             <div class="w3-container w3-half">
                                 <h5 class="w3-opacity"><b>Aula 1</b></h5>
@@ -199,7 +181,7 @@
                     </div>
 
                     <div  class="w3-container w3-card w3-white w3-margin-bottom">
-                        <h1><button onclick="myFunction('metodologia')" class="w3-button w3-hover-white w3-block w3-white w3-center">Metodologia Científica</button></h1>
+                        <h1><button onclick="collapse('metodologia')" class="w3-button w3-hover-white w3-block w3-white w3-center">Metodologia Científica</button></h1>
                         <div id="metodologia" class=" w3-hide">
                             <div class="w3-container w3-half">
                                 <h5 class="w3-opacity"><b>Aula 1</b></h5>
@@ -217,7 +199,7 @@
                     </div>
 
                     <div  class="w3-container w3-card w3-white w3-margin-bottom">
-                        <h1><button onclick="myFunction('ingles')" class="w3-button w3-hover-white w3-block w3-white w3-center">Inglês Instrumental</button></h1>
+                        <h1><button onclick="collapse('ingles')" class="w3-button w3-hover-white w3-block w3-white w3-center">Inglês Instrumental</button></h1>
                         <div id="ingles" class=" w3-hide">
                             <div class="w3-container w3-half">
                                 <h5 class="w3-opacity"><b>Aula 1</b></h5>
@@ -235,7 +217,7 @@
                     </div>
 
                     <div  class="w3-container w3-card w3-white w3-margin-bottom">
-                        <h1><button onclick="myFunction('fundamentos')" class="w3-button w3-hover-white w3-block w3-white w3-center">Fundamentos de Web Design</i></button></h1>
+                        <h1><button onclick="collapse('fundamentos')" class="w3-button w3-hover-white w3-block w3-white w3-center">Fundamentos de Web Design</i></button></h1>
                         <div id="fundamentos" class=" w3-hide">
                             <div class="w3-container w3-half">
                                 <h5 class="w3-opacity"><b>Aula 1</b></h5>
@@ -251,21 +233,11 @@
                             </div>
                         </div>
                     </div>
-
-
-
                 </div>
-
-                <!-- End Right Column -->
             </div>
-
-            <!-- End Grid -->
         </div>
-
-        <!-- End Page Container -->
     </div>
 
-    <!-- Footer -->
     <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-black w3-xlarge">
         <i class="fa fa-facebook-official w3-hover-opacity"></i>
         <i class="fa fa-instagram w3-hover-opacity"></i>
@@ -278,7 +250,7 @@
     <script src="script/jquery-3.1.0.js"></script>
     <script src="script/loginControl.js"></script>
     <script>
-                            function myFunction(id) {
+                            function collapse(id) {
                                 var x = document.getElementById(id);
                                 if (x.className.indexOf("w3-show") == -1) {
                                     x.className += " w3-show";

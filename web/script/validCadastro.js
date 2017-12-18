@@ -108,6 +108,9 @@ $('#form1').submit(function () {
                 email: $("input[name=email]"),
                 senha: $("input[name=senha]")
             },
+            success: function(data) {
+                console.log(data);
+            }
         })
     }
 
