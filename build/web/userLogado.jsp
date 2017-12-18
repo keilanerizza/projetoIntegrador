@@ -24,26 +24,35 @@
         <div class="w3-top">
             <div class="w3-bar w3-black w3-card">
                 <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars fa-2x"></i></a>
-                <a href="#" class="w3-bar-item"><img src="imagens/logo.png" style="width: 50px;"></a>
-                <a href="#" class="w3-bar-item w3-button w3-padding-24 w3-hide-small">Início</a>
-                <a href="#certificados" class="w3-bar-item w3-button w3-padding-24 w3-hide-small">Certificados</a>
-                <a href="#contact" class="w3-bar-item w3-button w3-padding-24 w3-hide-small">Contato</a>
-                <a href="#" onclick="document.getElementById('id01').style.display = 'block'" class="w3-bar-item w3-hover-red w3-right w3-button w3-padding-24 w3-hide-small">Sair</a>
+                <a href="#" class="w3-bar-item"><img src="imagens/logo.png" style="width: 80px;"></a>
+                <div class="w3-dropdown-hover w3-hide-small" style="float: right;">
+                    <div class="w3-container w3-card w3-white w3-margin-bottom" style="margin: 10px">
+                        <h2 class="w3-text-grey w3-padding-8" style="text-transform: capitalize;">
+                            <i class="fa fa-user-circle-o fa-fw w3-margin-right w3-xxmedium w3-text-teal"></i>
+                                <%= usuario%> 
+                            <i class="fa fa-caret-down"></i>
+                        </h2>
+                    </div>
+                    <div class="w3-dropdown-content w3-bar-block w3-card-4" style="right: 10;top: 80px">
+                        <a href="#" class="w3-bar-item w3-button">Meus Dados</a>
+                        <a href="#" class="w3-bar-item w3-button">Configurações</a>
+                        <hr>
+                        <a href="#" onclick="document.getElementById('id01').style.display = 'block'" class="w3-bar-item w3-hover-red w3-right w3-button w3-padding-24 w3-hide-small">Sair</a>
+                    </div>
+                </div>
             </div>
         </div>
 
 
         <!-- Navbar on small screens -->
         <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:60px">
-            <a href="#band" class="w3-bar-item w3-button w3-padding-24">Início</a>
-            <a href="#tour" class="w3-bar-item w3-button w3-padding-24">Apresentação</a>
+            <a href="#certificados" class="w3-bar-item w3-button w3-padding-24 w3-hide-small">Certificados</a>
             <a href="#contact" class="w3-bar-item w3-button w3-padding-24">Cursos</a>
-            <a href="#" onclick="document.getElementById('id01').style.display = 'block'" class="w3-bar-item w3-button w3-padding-24">Login</a>
-            <a href="#" class="w3-bar-item w3-button w3-padding-24">Contato</a>
+            <a href="#" class="w3-bar-item w3-button w3-padding-24">Sair</a>
         </div>
 
         <!-- Page Container -->
-        <div class="w3-content w3-margin-top w3-padding-64" style="max-width:1400px;">	
+        <div class="w3-content w3-margin-top w3-padding-64" style="max-width:1400px; padding-top: 100px !important">
 
             <!-- The Grid -->
             <div class="w3-row-padding">
@@ -52,36 +61,33 @@
                 <div class="w3-third">
 
                     <div class="w3-white w3-text-grey w3-card-4">
-                        <div class="w3-container w3-card w3-white w3-margin-bottom">
-                            <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-user-circle-o fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i><%= usuario%></h2>
-                        </div>
                         <div class="w3-container">
                             <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Notas obtidas</b></p>
                             <p>Sistemas Operacionais</p>
                             <div class="w3-light-grey w3-round-xlarge w3-small">
-                                <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:<%=SO_exercicio1 %>%"><%= SO_exercicio1%>%</div>
+                                <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:<%=SO_exercicio1%>%"><%= SO_exercicio1%>%</div>
                             </div>
-                            
+
                             <p>Lógica de programação</p>
                             <div class="w3-light-grey w3-round-xlarge w3-small">
-                                <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:<%=LP_exercicio1 %>%"><%= LP_exercicio1%>%</div>
+                                <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:<%=LP_exercicio1%>%"><%= LP_exercicio1%>%</div>
                             </div>
-                            
+
                             <p>Inglês Instrumental</p>
                             <div class="w3-light-grey w3-round-xlarge w3-small">
-                                <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:<%=ING_exercicio1 %>%"><%=ING_exercicio1%>%</div>
+                                <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:<%=ING_exercicio1%>%"><%=ING_exercicio1%>%</div>
                             </div>
-                            
+
                             <p>Fundamentos de Web Design</p>
                             <div class="w3-light-grey w3-round-xlarge w3-small">
                                 <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:<%=FWD_exercicio1%>%"><%= FWD_exercicio1%>%</div>
                             </div>
-                            
+
                             <p>Metodologia Científica</p>
                             <div class="w3-light-grey w3-round-xlarge w3-small">
                                 <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:<%=MC_Exercicio1%>%"><%=MC_Exercicio1%>%</div>
                             </div>
-                            
+
                             <p>Arquitetura e Organização de Computadores</p>
                             <div class="w3-light-grey w3-round-xlarge w3-small">
                                 <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:<%=AOC_exercicio1%>%"><%= AOC_exercicio1%>%</div>
@@ -131,8 +137,8 @@
                             </div>
                         </div>
                     </div>
-                    
-                     <div  class="w3-container w3-card w3-white w3-margin-bottom">
+
+                    <div  class="w3-container w3-card w3-white w3-margin-bottom">
                         <h1><button onclick="myFunction('so')" class="w3-button w3-hover-white w3-block w3-white w3-center">Sistemas Operacionais</button></h1>
                         <div id="so" class=" w3-hide">
                             <div class="w3-container w3-half">
@@ -149,7 +155,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
 
                     <div  class="w3-container w3-card w3-white w3-margin-bottom">
                         <h1><button onclick="myFunction('logica')" class="w3-button w3-hover-white w3-block w3-white w3-center">Lógica de programação</button></h1>
@@ -168,8 +174,8 @@
                             </div>
                         </div>
                     </div>
-                    
-                     <div  class="w3-container w3-card w3-white w3-margin-bottom">
+
+                    <div  class="w3-container w3-card w3-white w3-margin-bottom">
                         <h1><button onclick="myFunction('metodologia')" class="w3-button w3-hover-white w3-block w3-white w3-center">Metodologia Científica</button></h1>
                         <div id="metodologia" class=" w3-hide">
                             <div class="w3-container w3-half">
@@ -186,8 +192,8 @@
                             </div>
                         </div>
                     </div>
-                    
-                     <div  class="w3-container w3-card w3-white w3-margin-bottom">
+
+                    <div  class="w3-container w3-card w3-white w3-margin-bottom">
                         <h1><button onclick="myFunction('ingles')" class="w3-button w3-hover-white w3-block w3-white w3-center">Inglês Instrumental</button></h1>
                         <div id="ingles" class=" w3-hide">
                             <div class="w3-container w3-half">
@@ -203,9 +209,9 @@
                                 <hr>
                             </div>
                         </div>
-                     </div>
-                    
-                     <div  class="w3-container w3-card w3-white w3-margin-bottom">
+                    </div>
+
+                    <div  class="w3-container w3-card w3-white w3-margin-bottom">
                         <h1><button onclick="myFunction('fundamentos')" class="w3-button w3-hover-white w3-block w3-white w3-center">Fundamentos de Web Design</i></button></h1>
                         <div id="fundamentos" class=" w3-hide">
                             <div class="w3-container w3-half">
@@ -221,12 +227,12 @@
                                 <hr>
                             </div>
                         </div>
-                     </div>
-                    
-                    
-                        
                     </div>
-                    
+
+
+
+                </div>
+
                 <!-- End Right Column -->
             </div>
 
@@ -256,8 +262,8 @@
                 x.className = x.className.replace(" w3-show", "");
             }
         }
-        
-        
+
+
     </script>
 </body>
 </html>
