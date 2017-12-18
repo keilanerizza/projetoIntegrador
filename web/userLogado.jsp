@@ -56,7 +56,7 @@
                             <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-user-circle-o fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i><%= usuario%></h2>
                         </div>
                         <div class="w3-container">
-                            <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Cursos em andamento</b></p>
+                            <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Notas obtidas</b></p>
                             <p>Sistemas Operacionais</p>
                             <div class="w3-light-grey w3-round-xlarge w3-small">
                                 <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:<%=SO_exercicio1 %>%"><%= SO_exercicio1%>%</div>
@@ -137,7 +137,7 @@
                         <div id="so" class=" w3-hide">
                             <div class="w3-container w3-half">
                                 <h5 class="w3-opacity"><b>Aula 1</b></h5>
-                                <h1><a href="videoAulas/aocAula1.html" target="_blank"><i class="fa fa-youtube-play fa-fw w3-margin-right w3-text-red"></a></i><a href="exercicios/SO_exercicio2.html" target="_blank"></i><i class="fa fa-book fa-fw w3-margin-right w3-text-dark-gray"></a></i><i class="fa fa-certificate w3-margin-right w3-text-dark-gray" aria-hidden="true"></i></h1>
+                                <h1><a href="videoAulas/aocAula1.html" target="_blank"><i class="fa fa-youtube-play fa-fw w3-margin-right w3-text-red"></a></i><a href="exercicios/SO_exercicio1.html" target="_blank"></i><i class="fa fa-book fa-fw w3-margin-right w3-text-dark-gray"></a></i><i class="fa fa-certificate w3-margin-right w3-text-dark-gray" aria-hidden="true"></i></h1>
                                 <p>Nesta primeira aula você aprenderá sobre as funções básicas da interação entre um sistema operacional e um computador.</p>
                                 <hr>
                             </div>
@@ -174,7 +174,7 @@
                         <div id="metodologia" class=" w3-hide">
                             <div class="w3-container w3-half">
                                 <h5 class="w3-opacity"><b>Aula 1</b></h5>
-                                <h1><i class="fa fa-youtube-play fa-fw w3-margin-right w3-text-red"></i><a href="exercicios/MC_exercicio1.html" target="_blank"><i class="fa fa-book fa-fw w3-margin-right w3-text-dark-gray"></a></i><i class="fa fa-certificate w3-margin-right w3-text-dark-gray" aria-hidden="true"></i></h1>
+                                <h1><i class="fa fa-youtube-play fa-fw w3-margin-right w3-text-red"></i><a href="exercicios/MC_Exercicio1.html" target="_blank"><i class="fa fa-book fa-fw w3-margin-right w3-text-dark-gray"></a></i><i class="fa fa-certificate w3-margin-right w3-text-dark-gray" aria-hidden="true"></i></h1>
                                 <p>Nesta primeira aula você aprenderá sobre as funções básicas da interação entre um sistema operacional e um computador.</p>
                                 <hr>
                             </div>
