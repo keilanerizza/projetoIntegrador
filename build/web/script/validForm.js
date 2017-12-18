@@ -21,6 +21,7 @@ function validar(correcao) {
             },
         }).done(function () {
             $('input.botao:first').val('Fechar');
+            $('input.botao:last').hide();
             $('input.botao:first').click(function () {
                 window.close();
             });
