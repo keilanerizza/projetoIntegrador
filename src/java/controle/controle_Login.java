@@ -31,7 +31,7 @@ public class controle_Login extends HttpServlet {
         session.setAttribute("usuLogado", usuario);
         session.setAttribute("senha", senha);
             
-        if(usuario.equals("admin") && senha.equals("admin")){ // usuário OK e senha OK
+        if(usuario.equals("admin") && senha.equals("AA22abc")){ // usuário OK e senha OK
             response.sendRedirect("userLogado.jsp");
         } else {
             response.sendRedirect("index.html#dadosIncorretos");
