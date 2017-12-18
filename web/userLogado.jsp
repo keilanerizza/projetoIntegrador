@@ -19,6 +19,13 @@
         <%String LP_exercicio1 = (String) session.getAttribute("/projetoIntegrador/exercicios/LP_exercicio1.html");%>
         <%String MC_Exercicio1 = (String) session.getAttribute("/projetoIntegrador/exercicios/MC_Exercicio1.html");%>
         <%String SO_exercicio1 = (String) session.getAttribute("/projetoIntegrador/exercicios/SO_exercicio1.html");%>
+        
+        <% if(AOC_exercicio1 == null ) { AOC_exercicio1 = (String) "0";}%>
+        <% if(FWD_exercicio1 == null ) { FWD_exercicio1 = (String) "0";}%>
+        <% if(ING_exercicio1 == null ) { ING_exercicio1 = (String) "0";}%>
+        <% if(LP_exercicio1 == null ) { LP_exercicio1 = (String) "0";}%>
+        <% if(MC_Exercicio1 == null ) { MC_Exercicio1 = (String) "0";}%>
+        <% if(SO_exercicio1 == null ) { SO_exercicio1 = (String) "0";}%>
         <!-- Navbar -->
         <div class="w3-top">
             <div class="w3-bar w3-black w3-card">
