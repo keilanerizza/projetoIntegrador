@@ -14,12 +14,12 @@
     <body class="w3-light-grey">
 
         <%String usuario = (String) session.getAttribute("usuLogado");%>
-        <%String AOC_exercicio1 = (String) session.getAttribute("/Rage/exercicios/AOC_exercicio1.html");%>
-        <%String FWD_exercicio1 = (String) session.getAttribute("/Rage/exercicios/FWD_exercicio1.html");%>
-        <%String ING_exercicio1 = (String) session.getAttribute("/Rage/exercicios/ING_exercicio1.html");%>
-        <%String LP_exercicio1 = (String) session.getAttribute("/Rage/exercicios/LP_exercicio1.html");%>
-        <%String MC_Exercicio1 = (String) session.getAttribute("/Rage/exercicios/MC_Exercicio1.html");%>
-        <%String SO_exercicio1 = (String) session.getAttribute("/Rage/exercicios/SO_exercicio1.html");%>
+        <%String AOC_exercicio1 = (String) session.getAttribute("/projetoIntegrador/exercicios/AOC_exercicio1.html");%>
+        <%String FWD_exercicio1 = (String) session.getAttribute("/projetoIntegrador/exercicios/FWD_exercicio1.html");%>
+        <%String ING_exercicio1 = (String) session.getAttribute("/projetoIntegrador/exercicios/ING_exercicio1.html");%>
+        <%String LP_exercicio1 = (String) session.getAttribute("/projetoIntegrador/exercicios/LP_exercicio1.html");%>
+        <%String MC_Exercicio1 = (String) session.getAttribute("/projetoIntegrador/exercicios/MC_Exercicio1.html");%>
+        <%String SO_exercicio1 = (String) session.getAttribute("/projetoIntegrador/exercicios/SO_exercicio1.html");%>
         <!-- Navbar -->
         <div class="w3-top">
             <div class="w3-bar w3-black w3-card">
