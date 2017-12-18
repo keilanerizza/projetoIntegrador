@@ -8,7 +8,6 @@
         <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" href="fonts/roboto/roboto.css">
         <link rel="icon" href="imagens/rage-icon.ico" type="image/x-icon">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
         <title>RAGE NET Cursos Online</title>
     </head>
@@ -61,34 +60,46 @@
                 </div>
             </div>
         </div>
-
+        <style>
+            .w3-section span {
+                color: red;
+            }
+            .w3-section label {
+                font-size: 18px;
+            }
+        </style>
         <!---Conteudo---> 
         <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="band">
             <h2 class="w3-wide" style="visibility:hidden;">Cadastre-se e tenha acesso a todo conteúdo.</h2>
             <h2 class="w3-wide">Cadastre-se e tenha acesso a todo conteúdo.</h2>
 
-            <form class="w3-container w3-card-4 w3-padding-16 w3-white" name="form1" action="insere" method="POST">
+            <form class="w3-container w3-card-4 w3-padding-16 w3-white" method="POST" action="insere" name="form2" id="form1" novalidate="novalidate">
                 <div class="w3-section">      
                     <label>Primeiro nome</label>
-                    <input class="w3-input" type="text" name="nome" required>
+                    <input id="Pnome" class="w3-input" type="text" name="nome"/>
+                    <span id="spanNome"></span>
                 </div>
                 <div class="w3-section">      
                     <label>Nome de usuário</label>
-                    <input class="w3-input" type="text" name="user" required>
+                    <input id="nomeUsuario" class="w3-input" type="text" name="user"/>
+                    <span id="spanUsuario"></span>
                 </div>
                 <div class="w3-section">      
                     <label>E-mail</label>
-                    <input class="w3-input" type="email" name="email" required>
+                    <input id="email" class="w3-input" type="email" name="email"/>
+                    <span id="spanEmail"></span>
                 </div>
                 <div class="w3-section">      
                     <label>Senha</label>
-                    <input class="w3-input" type="password" name="senha" required>
+                    <input id="senha" class="w3-input" type="password" name="senha"/>
+                    <span id="spanSenha"></span>
                 </div>
                 <div class="w3-section">      
                     <label>Confirmar senha</label>
-                    <input class="w3-input" type="password" name="c-senha" required>
+                    <input id="cSenha" class="w3-input" type="password" name="c-senha"/>
+                    <span id="spanCSenha"></span>
                 </div>
-                <button type="submit" class="w3-button w3-green w3-right w3-theme">Cadastrar</button>
+                <input type="submit" class="w3-button w3-green w3-right w3-theme" value="Cadastrar">
             </form>
         </div>
 
@@ -132,32 +143,8 @@
                 <i class="fa fa-linkedin w3-hover-opacity"></i>
                 <p class="w3-medium">Todos os direitos reservados</p>
             </footer>
-
-
-
-            <script>
-                // Used to toggle the menu on small screens when clicking on the menu button
-                function myFunction() {
-                    var x = document.getElementById("navDemo");
-                    if (x.className.indexOf("w3-show") == -1) {
-                        x.className += " w3-show";
-                    } else {
-                        x.className = x.className.replace(" w3-show", "");
-                    }
-                }
-
-
-
-                $(document).keydown(function (event) {
-                    if (event.keyCode == 27) {
-                        $('#id01').hide();
-                    }
-                });
-
-
-
-            </script>
-
+    <script src="script/jquery.min.js"></script>
+    <script src="script/validCadastro.js"></script>
     </body>
 </head>
 </html>
