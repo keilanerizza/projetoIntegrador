@@ -66,41 +66,23 @@
         <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="band">
             <h2 class="w3-wide" style="visibility:hidden;">Cadastre-se e tenha acesso a todo conteúdo.</h2>
             <h2 class="w3-wide">Cadastre-se e tenha acesso a todo conteúdo.</h2>
-           
-            <form name="form1" accept-charset="UTF-8" action="insere" method="POST" class="w3-container w3-card-4 w3-light-grey w3-text-blue w3-margin">
-               
-                <h2 class="w3-center">Insira seus dados abaixo:</h2>
-                
-                <div class="w3-row w3-section">
-                    <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-user"></i></div>
-                    <div class="w3-rest">
-                        <input class="w3-input w3-border" name="nome" type="text" placeholder="Nome">
-                    </div>
+
+            <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="/action_page.php" target="_blank">
+                <div class="w3-section">      
+                    <label>Name</label>
+                    <input class="w3-input" type="text" name="Name" required="">
                 </div>
-
-                <div class="w3-row w3-section">
-                    <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-user-circle"></i></div>
-                    <div class="w3-rest">
-                        <input class="w3-input w3-border" name="user" type="text" placeholder="Nome de usuário">
-                    </div>
+                <div class="w3-section">      
+                    <label>Email</label>
+                    <input class="w3-input" type="text" name="Email" required="">
                 </div>
-
-                <div class="w3-row w3-section">
-                    <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-envelope-o"></i></div>
-                    <div class="w3-rest">
-                        <input class="w3-input w3-border" name="email" type="text" placeholder="E-mail">
-                    </div>
-                </div>
-
-                <div class="w3-row w3-section">
-                    <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-key"></i></div>
-                    <div class="w3-rest">
-                        <input class="w3-input w3-border" name="senha" type="password" placeholder="Senha">
-                    </div>
-                </div>
-
-                <button type="submit" class="w3-button w3-block w3-section w3-blue w3-ripple w3-padding">Cadastrar</button>
-
+                <div class="w3-section">      
+                    <label>Message</label>
+                    <input class="w3-input" type="text" name="Message" required="">
+                </div>  
+                <input class="w3-check" type="checkbox" checked="" name="Like">
+                <label>I Like it!</label>
+                <button type="submit" class="w3-button w3-right w3-theme">Send</button>
             </form>
         </div>
 

@@ -7,8 +7,6 @@
         <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
         <link rel="stylesheet" href="fonts/roboto/roboto.css">
         <link rel="icon" href="imagens/rage-icon.ico" type="image/x-icon">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
         <title>RAGE NET</title>
     </head>
     <body class="w3-light-grey">
@@ -37,7 +35,7 @@
                         <a href="#" class="w3-bar-item w3-button">Meus Dados</a>
                         <a href="#" class="w3-bar-item w3-button">Configurações</a>
                         <hr>
-                        <a href="#" onclick="document.getElementById('id01').style.display = 'block'" class="w3-bar-item w3-hover-red w3-right w3-button w3-padding-24 w3-hide-small">Sair</a>
+                        <a id="logout" href="#" class="w3-bar-item w3-hover-red w3-right w3-button w3-padding-24 w3-hide-small">Sair</a>
                     </div>
                 </div>
             </div>
@@ -252,7 +250,8 @@
         <i class="fa fa-linkedin w3-hover-opacity"></i>
         <p class="w3-medium">Todos os direitos reservados</p>
     </footer>
-
+    <script src="script/jquery-3.1.0.js"></script>
+    <script src="script/loginControl.js"></script>
     <script>
         function myFunction(id) {
             var x = document.getElementById(id);
