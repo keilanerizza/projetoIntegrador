@@ -11,7 +11,7 @@ function validar(correcao) {
 	);
         $.ajax({
             method: "POST",
-            url: "nota",
+            url: "../nota",
             data: {
                 exercicio: segment,
                 nota: cont * 10,

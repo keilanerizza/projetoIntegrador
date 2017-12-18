@@ -20,15 +20,7 @@
                 <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars fa-2x"></i></a>
                 <a href="#" class="w3-bar-item"><img src="imagens/logo.png" style="width: 50px;"></a>
                 <a href="index.html" class="w3-bar-item w3-button w3-padding-24 w3-hide-small">Início</a>
-                <a href="#apresentacao" class="w3-bar-item w3-button w3-padding-24 w3-hide-small">Apresentação</a>
-                <div class="w3-dropdown-hover w3-hide-small">
-                    <button class="w3-padding-24 w3-button" title="More">Cursos <i class="fa fa-caret-down"></i></button>     
-                    <div class="w3-dropdown-content w3-bar-block w3-card-4">
-                        <a href="#" class="w3-bar-item w3-button">Sistemas Operacionais</a>
-                        <a href="#" class="w3-bar-item w3-button">Extras</a>
-                        <a href="#" class="w3-bar-item w3-button">Media</a>
-                    </div>
-                </div>
+                <a href="#certificados" class="w3-bar-item w3-button w3-padding-24 w3-hide-small">Certificados</a>
                 <a href="#contact" class="w3-bar-item w3-button w3-padding-24 w3-hide-small">Contato</a>
                 <a href="#" onclick="document.getElementById('id01').style.display = 'block'" class="w3-bar-item w3-hover-red w3-right w3-button w3-padding-24 w3-hide-small">Login</a>
             </div>
@@ -61,7 +53,7 @@
                             <label class="w3-text-black"><b>Senha:</b></label>
                             <input class="w3-input w3-border w3-light-gray" name="senha" type="password"></p>
                         <p>
-                        <p class="w3-center">Não possui um login? <a href="documents/cadastro.html">Cadastre-se!<a/></p>
+                        <p class="w3-center">Não possui um login? <a href="cadastro.jsp">Cadastre-se!<a/></p>
                         <div class="w3-center">
                             <button class="w3-btn w3-red">Login</button></p>
                         </div>
@@ -74,41 +66,23 @@
         <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="band">
             <h2 class="w3-wide" style="visibility:hidden;">Cadastre-se e tenha acesso a todo conteúdo.</h2>
             <h2 class="w3-wide">Cadastre-se e tenha acesso a todo conteúdo.</h2>
-           
-            <form name="form1" accept-charset="UTF-8" action="insere" method="POST" class="w3-container w3-card-4 w3-light-grey w3-text-blue w3-margin">
-               
-                <h2 class="w3-center">Insira seus dados abaixo:</h2>
-                
-                <div class="w3-row w3-section">
-                    <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-user"></i></div>
-                    <div class="w3-rest">
-                        <input class="w3-input w3-border" name="nome" type="text" placeholder="Nome">
-                    </div>
+
+            <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="/action_page.php" target="_blank">
+                <div class="w3-section">      
+                    <label>Name</label>
+                    <input class="w3-input" type="text" name="Name" required="">
                 </div>
-
-                <div class="w3-row w3-section">
-                    <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-user-circle"></i></div>
-                    <div class="w3-rest">
-                        <input class="w3-input w3-border" name="user" type="text" placeholder="Nome de usuário">
-                    </div>
+                <div class="w3-section">      
+                    <label>Email</label>
+                    <input class="w3-input" type="text" name="Email" required="">
                 </div>
-
-                <div class="w3-row w3-section">
-                    <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-envelope-o"></i></div>
-                    <div class="w3-rest">
-                        <input class="w3-input w3-border" name="email" type="text" placeholder="E-mail">
-                    </div>
-                </div>
-
-                <div class="w3-row w3-section">
-                    <div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-key"></i></div>
-                    <div class="w3-rest">
-                        <input class="w3-input w3-border" name="senha" type="password" placeholder="Senha">
-                    </div>
-                </div>
-
-                <button type="submit" class="w3-button w3-block w3-section w3-blue w3-ripple w3-padding">Cadastrar</button>
-
+                <div class="w3-section">      
+                    <label>Message</label>
+                    <input class="w3-input" type="text" name="Message" required="">
+                </div>  
+                <input class="w3-check" type="checkbox" checked="" name="Like">
+                <label>I Like it!</label>
+                <button type="submit" class="w3-button w3-right w3-theme">Send</button>
             </form>
         </div>
 

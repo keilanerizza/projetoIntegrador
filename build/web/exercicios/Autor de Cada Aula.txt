@@ -1,0 +1,9 @@
+ADRIEL
+  - Sistemas Operacionais
+  - Fundamentos de Web Design 1
+GUSTAVO
+  - Lógica de Programação
+  - Metodologia Científica
+RODRIGO
+  - Inglês Instrumental
+  - Arquitetura e Organização de Computadores
