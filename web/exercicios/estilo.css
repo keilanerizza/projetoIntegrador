@@ -1,45 +1,130 @@
 body {
-	font-family: Verdana;
-	font-size: 100%;
-	color:black;
-	padding:2%;
-	background: #f2f2f2;
-	background-image: url("../imagens/fundo_uri2.jpg");
-	background-repeat: repeat !important;
+    font-family: Verdana;
+    font-size: 100%;
+    color:black;
+    padding:2%;
+    background: #fff;
+    background-image: url("../imagens/fundo_uri2.jpg");
+    background-repeat: repeat !important;
     /*background-image: url("../imagens/back.jpg");*/
-	/*background-size: 100px 88px;*/
+    /*background-size: 100px 88px;*/
 }
 fieldset {
-	border: thin solid;
-	background-color: #f2f2f2;
+    border: thin solid;
+    background-color: #f2f2f2;
 }
 p{
-	font-weight:bold;
-	font-size: 14px;
+    font-weight:bold;
+    font-size: 14px;
 }
 legend{
-	background-color: #f2f2f2;
-	font-weight:bold;
-	font-size: 120%;
+    background-color: #f8f8f8;
+    font-weight: bold;
+    font-size: 120%;
+    padding: 10px !important;
+    border-top: 3px solid silver;
+    border-right: 3px solid silver;
+    border-left: 3px solid silver;
 }
 .botao{
-	background-color:#2d2d2d;
-	color:white;
-	border:none;
-	border-style:square;
-	padding:1%;
-	margin-top:1%;
-	cursor:pointer;
+    font-weight: bold;
+    background-color:#2d2d2d;
+    color:white;
+    border:none;
+    border-style:square;
+    margin-top:1%;
+    cursor:pointer;
+    padding: 10px;
+    width: 300px;
+    margin: 10px;
+    border-radius: 2px;
+    transition: 1s all;
+    float: right;
 }
 .botao:hover{
-	background-color:#aaaaaa;
+    transition: 1s all;
+    color: black;
+    background-color:#fff;
 }
 
 
 /* Media Queries ------------------------------- */
 @media all and (max-width : 768px) {
-	fieldset{width:100%;}
+    fieldset{width:100%;}
+}
+@media all and (min-width : 768px) {
+    fieldset{
+        width:100%;
+        padding: 100px !important;
+    }
+    legend {
+        font-size: 200%;
+    }
 }
 @media all and (max-width : 430px) {
-	fieldset{width:100%;}
+    fieldset{width:100%;}
+}
+
+
+fieldset {
+    background: rgba(192, 192, 192, 0.11);
+}
+
+p {
+    background: black;
+    padding: 30px;
+    border-radius: 2px;
+    color: white;
+}
+
+label, input[type=radio]{
+    margin: 2px;
+    cursor: pointer;
+}
+
+/* The snackbar - position it at the bottom and in the middle of the screen */
+#snackbar {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: red; /* Black background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    border-radius: 2px; /* Rounded borders */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 50%; /* Center the snackbar */
+    bottom: 30px; /* 30px from the bottom */
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbar.show {
+    visibility: visible; /* Show the snackbar */
+
+/* Add animation: Take 0.5 seconds to fade in and out the snackbar. 
+However, delay the fade out process for 2.5 seconds */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
 }
