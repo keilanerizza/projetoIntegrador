@@ -96,7 +96,7 @@ public class insere extends HttpServlet {
             c.setEmail(request.getParameter("email"));
             c.setSenha(request.getParameter("senha"));
             grava(c);
-            response.sendRedirect("index.html");     
+            response.sendRedirect("index.html#cadastroRealizado");     
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
