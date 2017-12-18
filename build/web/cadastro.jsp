@@ -67,22 +67,28 @@
             <h2 class="w3-wide" style="visibility:hidden;">Cadastre-se e tenha acesso a todo conteúdo.</h2>
             <h2 class="w3-wide">Cadastre-se e tenha acesso a todo conteúdo.</h2>
 
-            <form class="w3-container w3-card-4 w3-padding-16 w3-white" action="/action_page.php" target="_blank">
+            <form class="w3-container w3-card-4 w3-padding-16 w3-white" name="form1" action="insere" method="POST">
                 <div class="w3-section">      
-                    <label>Name</label>
-                    <input class="w3-input" type="text" name="Name" required="">
+                    <label>Primeiro nome</label>
+                    <input class="w3-input" type="text" name="nome" required>
                 </div>
                 <div class="w3-section">      
-                    <label>Email</label>
-                    <input class="w3-input" type="text" name="Email" required="">
+                    <label>Nome de usuário</label>
+                    <input class="w3-input" type="text" name="user" required>
                 </div>
                 <div class="w3-section">      
-                    <label>Message</label>
-                    <input class="w3-input" type="text" name="Message" required="">
-                </div>  
-                <input class="w3-check" type="checkbox" checked="" name="Like">
-                <label>I Like it!</label>
-                <button type="submit" class="w3-button w3-right w3-theme">Send</button>
+                    <label>E-mail</label>
+                    <input class="w3-input" type="email" name="email" required>
+                </div>
+                <div class="w3-section">      
+                    <label>Senha</label>
+                    <input class="w3-input" type="password" name="senha" required>
+                </div>
+                <div class="w3-section">      
+                    <label>Confirmar senha</label>
+                    <input class="w3-input" type="password" name="c-senha" required>
+                </div>
+                <button type="submit" class="w3-button w3-green w3-right w3-theme">Cadastrar</button>
             </form>
         </div>
 

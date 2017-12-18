@@ -12,20 +12,34 @@
     <body class="w3-light-grey">
 
         <%String usuario = (String) session.getAttribute("usuLogado");%>
-        <% if (usuario == null) { response.sendRedirect("index.html#permissaoNegada"); } %>
+        <% if (usuario == null) {
+                response.sendRedirect("index.html#permissaoNegada");
+            } %>
         <%String AOC_exercicio1 = (String) session.getAttribute("/projetoIntegrador/exercicios/AOC_exercicio1.html");%>
         <%String FWD_exercicio1 = (String) session.getAttribute("/projetoIntegrador/exercicios/FWD_exercicio1.html");%>
         <%String ING_exercicio1 = (String) session.getAttribute("/projetoIntegrador/exercicios/ING_exercicio1.html");%>
         <%String LP_exercicio1 = (String) session.getAttribute("/projetoIntegrador/exercicios/LP_exercicio1.html");%>
         <%String MC_Exercicio1 = (String) session.getAttribute("/projetoIntegrador/exercicios/MC_Exercicio1.html");%>
         <%String SO_exercicio1 = (String) session.getAttribute("/projetoIntegrador/exercicios/SO_exercicio1.html");%>
-        
-        <% if(AOC_exercicio1 == null ) { AOC_exercicio1 = (String) "0";}%>
-        <% if(FWD_exercicio1 == null ) { FWD_exercicio1 = (String) "0";}%>
-        <% if(ING_exercicio1 == null ) { ING_exercicio1 = (String) "0";}%>
-        <% if(LP_exercicio1 == null ) { LP_exercicio1 = (String) "0";}%>
-        <% if(MC_Exercicio1 == null ) { MC_Exercicio1 = (String) "0";}%>
-        <% if(SO_exercicio1 == null ) { SO_exercicio1 = (String) "0";}%>
+
+        <% if (AOC_exercicio1 == null) {
+                AOC_exercicio1 = (String) "0";
+            }%>
+        <% if (FWD_exercicio1 == null) {
+                FWD_exercicio1 = (String) "0";
+            }%>
+        <% if (ING_exercicio1 == null) {
+                ING_exercicio1 = (String) "0";
+            }%>
+        <% if (LP_exercicio1 == null) {
+                LP_exercicio1 = (String) "0";
+            }%>
+        <% if (MC_Exercicio1 == null) {
+                MC_Exercicio1 = (String) "0";
+            }%>
+        <% if (SO_exercicio1 == null) {
+                SO_exercicio1 = (String) "0";
+            }%>
         <!-- Navbar -->
         <div class="w3-top">
             <div class="w3-bar w3-black w3-card">
@@ -35,7 +49,7 @@
                     <div class="w3-container w3-card w3-white w3-margin-bottom" style="margin: 10px">
                         <h2 class="w3-text-grey w3-padding-8" style="text-transform: capitalize;">
                             <i class="fa fa-user-circle-o fa-fw w3-margin-right w3-xxmedium w3-text-teal"></i>
-                                <%= usuario%> 
+                            <%= usuario%> 
                             <i class="fa fa-caret-down"></i>
                         </h2>
                     </div>
@@ -68,7 +82,10 @@
 
                     <div class="w3-white w3-text-grey w3-card-4">
                         <div class="w3-container">
-                            <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Notas obtidas</b></p>
+                            <p class="w3-large">
+                                <b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Notas obtidas</b>
+                                <b style="float: right"><a href="userLogado.jsp" title="Recarregar notas"><i class="fa fa-refresh fa-fw w3-margin-right w3-text-teal"></i></a></b>
+                            </p>
                             <p>Sistemas Operacionais</p>
                             <div class="w3-light-grey w3-round-xlarge w3-small">
                                 <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:<%=SO_exercicio1%>%"><%= SO_exercicio1%>%</div>
@@ -261,14 +278,14 @@
     <script src="script/jquery-3.1.0.js"></script>
     <script src="script/loginControl.js"></script>
     <script>
-        function myFunction(id) {
-            var x = document.getElementById(id);
-            if (x.className.indexOf("w3-show") == -1) {
-                x.className += " w3-show";
-            } else {
-                x.className = x.className.replace(" w3-show", "");
-            }
-        }
+                            function myFunction(id) {
+                                var x = document.getElementById(id);
+                                if (x.className.indexOf("w3-show") == -1) {
+                                    x.className += " w3-show";
+                                } else {
+                                    x.className = x.className.replace(" w3-show", "");
+                                }
+                            }
 
 
     </script>
