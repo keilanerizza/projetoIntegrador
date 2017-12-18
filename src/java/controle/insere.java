@@ -70,8 +70,6 @@ public class insere extends HttpServlet {
             b.write(c.getUser()+";");
             b.write(c.getSenha()+";");
             b.write(c.getEmail()+";");
-            b.write(c.getSenha()+";");
-            b.write(c.getNotas()+";");
             b.newLine();
             b.flush();
             b.close();   

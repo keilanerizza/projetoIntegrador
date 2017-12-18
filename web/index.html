@@ -16,18 +16,10 @@
         <!-- Navbar -->
         <div class="w3-top">
             <div class="w3-bar w3-black w3-card">
-                <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars fa-2x"></i></a>
+               <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars fa-2x"></i></a>
                 <a href="#" class="w3-bar-item"><img src="imagens/logo.png" style="width: 50px;"></a>
                 <a href="#" class="w3-bar-item w3-button w3-padding-24 w3-hide-small">Início</a>
-                <a href="#apresentacao" class="w3-bar-item w3-button w3-padding-24 w3-hide-small">Apresentação</a>
-                <div class="w3-dropdown-hover w3-hide-small">
-                    <button class="w3-padding-24 w3-button" title="More">Cursos <i class="fa fa-caret-down"></i></button>     
-                    <div class="w3-dropdown-content w3-bar-block w3-card-4">
-                        <a href="#" class="w3-bar-item w3-button">Sistemas Operacionais</a>
-                        <a href="#" class="w3-bar-item w3-button">Extras</a>
-                        <a href="#" class="w3-bar-item w3-button">Media</a>
-                    </div>
-                </div>
+                <a href="#certificados" class="w3-bar-item w3-button w3-padding-24 w3-hide-small">Certificados</a>
                 <a href="#contact" class="w3-bar-item w3-button w3-padding-24 w3-hide-small">Contato</a>
                 <a href="#" onclick="document.getElementById('id01').style.display = 'block'" class="w3-bar-item w3-hover-red w3-right w3-button w3-padding-24 w3-hide-small">Login</a>
             </div>
@@ -38,7 +30,6 @@
         <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:60px">
             <a href="#band" class="w3-bar-item w3-button w3-padding-24">Início</a>
             <a href="#tour" class="w3-bar-item w3-button w3-padding-24">Apresentação</a>
-            <a href="#contact" class="w3-bar-item w3-button w3-padding-24">Cursos</a>
             <a href="#" onclick="document.getElementById('id01').style.display = 'block'" class="w3-bar-item w3-button w3-padding-24">Login</a>
             <a href="#" class="w3-bar-item w3-button w3-padding-24">Contato</a>
 
@@ -69,30 +60,6 @@
             </div>
         </div>
 
-        <!---Slides
-        <div class="w3-content" style="max-width:2000px;margin-top:46px">
-        
-          <div class="mySlides w3-display-container w3-center">
-            <img src="imagens/fundo.jpg" style="width:100%">
-            <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-              <h3>Los Angeles</h3>
-              <p><b>We had the best time playing at Venice Beach!</b></p>   
-            </div>
-          </div>
-          <div class="mySlides w3-display-container w3-center">
-            <img src="imagens/1.jpg" style="width:100%">
-            <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-              <h3>New York</h3>
-              <p><b>The atmosphere in New York is lorem ipsum.</b></p>    
-            </div>
-          </div>
-          <div class="mySlides w3-display-container w3-center">
-            <img src="imagens/2.jpg" style="width:100%">
-            <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
-              <h3>Chicago</h3>
-              <p><b>Thank you, Chicago - A night we won't forget.</b></p>    
-            </div>
-          </div>--->
         <!-- The Band Section -->
         <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
             <h2 class="w3-wide" style="visibility:hidden;">RAGE NET</h2>
@@ -117,7 +84,7 @@
                         <div class="w3-container w3-white">
                             <p><b>HTML</b></p>
                             <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display = 'block'">Confira!</button>
+                            <button class="w3-button w3-black w3-margin-bottom"><a href="https://www.youtube.com/watch?v=RCagJFzZ_9k&list=PL4DHlUbPquw6lNO4BHKbGh3lEkXCvIR4l">Confira!</a></button>
                         </div>
                     </div>
 
@@ -128,7 +95,7 @@
                         <div class="w3-container w3-white">
                             <p><b>Sistemas Operacionais</b></p>
                             <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display = 'block'">Confira!</button>
+                            <button class="w3-button w3-black w3-margin-bottom"><a href="https://www.youtube.com/watch?v=eLdTsZGU_6E&list=PL4DHlUbPquw6-ZOErggqMCIjudEr_CdM6">Confira!</a></button>
                         </div>
                     </div>
                     <div class="w3-third w3-margin-bottom">
@@ -136,7 +103,7 @@
                         <div class="w3-container w3-white">
                             <p><b>Lógica de programação</b></p>
                             <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display = 'block'">Confira!</button>
+                            <button class="w3-button w3-black w3-margin-bottom"><a href="https://www.youtube.com/watch?v=BVMpCaFCpjc&list=PL4DHlUbPquw5WhZwAP7iTKF66egzRnYjH">Confira!</a></button>
                         </div>
 
                     </div>

@@ -28,9 +28,10 @@ public class controle_Login extends HttpServlet {
         
             
         HttpSession session = request.getSession();
-        session.setAttribute("usuLogado", usuario);       
+        session.setAttribute("usuLogado", usuario);
+        session.setAttribute("senha", senha);
             
-        if(usuario.equals("admin") && senha.equals("admin")){ // usuário OK e senha OK
+        if(usuario.equals(usuario) && senha.equals(senha)){ // usuário OK e senha OK
             response.sendRedirect("userLogado.jsp");
         }        
     }
