@@ -12,6 +12,7 @@
     <body class="w3-light-grey">
 
         <%String usuario = (String) session.getAttribute("usuLogado");%>
+        <% if (usuario == null) { response.sendRedirect("index.html#permissaoNegada"); } %>
         <%String AOC_exercicio1 = (String) session.getAttribute("/projetoIntegrador/exercicios/AOC_exercicio1.html");%>
         <%String FWD_exercicio1 = (String) session.getAttribute("/projetoIntegrador/exercicios/FWD_exercicio1.html");%>
         <%String ING_exercicio1 = (String) session.getAttribute("/projetoIntegrador/exercicios/ING_exercicio1.html");%>
