@@ -7,7 +7,6 @@ public class usuarios {
     private String email;
     private String senha;
     private String user;
-    private String notas;
 
 
     public String getNome() {
@@ -25,10 +24,6 @@ public class usuarios {
     public String getUser() {
         return user;
     }
-    
-    public String getNotas() {
-        return notas;
-    }
 
     public void setNome(String nome) {
         this.nome = nome;
@@ -44,10 +39,6 @@ public class usuarios {
 
     public void setUser(String user) {
         this.user = user;
-    }
-    
-    public void setNotas(String nota) {
-        this.notas = nota;
     }
     
     

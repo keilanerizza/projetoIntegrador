@@ -14,13 +14,12 @@
     <body class="w3-light-grey">
 
         <%String usuario = (String) session.getAttribute("usuLogado");%>
-        <%String AOC_exercicio1 = (String) session.getAttribute("/Rage/AOC_exercicio1.html");%>
-        <%String FWD_exercicio1 = (String) session.getAttribute("/Rage/FWD_exercicio1.html");%>
-        <%String ING_exercicio1 = (String) session.getAttribute("/Rage/ING_exercicio1.html");%>
-        <%String LP_exercicio1 = (String) session.getAttribute("/Rage/LP_exercicio1.html");%>
-        <%String MC_Exercicio1 = (String) session.getAttribute("/Rage/MC_Exercicio1.html");%>
-        <%String SO_exercicio1 = (String) session.getAttribute("/Rage/SO_exercicio1.html");%>
-        
+        <%String AOC_exercicio1 = (String) session.getAttribute("/Rage/exercicios/AOC_exercicio1.html");%>
+        <%String FWD_exercicio1 = (String) session.getAttribute("/Rage/exercicios/FWD_exercicio1.html");%>
+        <%String ING_exercicio1 = (String) session.getAttribute("/Rage/exercicios/ING_exercicio1.html");%>
+        <%String LP_exercicio1 = (String) session.getAttribute("/Rage/exercicios/LP_exercicio1.html");%>
+        <%String MC_Exercicio1 = (String) session.getAttribute("/Rage/exercicios/MC_Exercicio1.html");%>
+        <%String SO_exercicio1 = (String) session.getAttribute("/Rage/exercicios/SO_exercicio1.html");%>
         <!-- Navbar -->
         <div class="w3-top">
             <div class="w3-bar w3-black w3-card">
@@ -28,17 +27,6 @@
                 <a href="#" class="w3-bar-item"><img src="imagens/logo.png" style="width: 50px;"></a>
                 <a href="#" class="w3-bar-item w3-button w3-padding-24 w3-hide-small">Início</a>
                 <a href="#certificados" class="w3-bar-item w3-button w3-padding-24 w3-hide-small">Certificados</a>
-                <div class="w3-dropdown-hover w3-hide-small">
-                    <button class="w3-padding-24 w3-button" title="More">Cursos <i class="fa fa-caret-down"></i></button>     
-                    <div class="w3-dropdown-content w3-bar-block w3-card-4">
-                        <a href="AOC_exercicio1.html" class="w3-bar-item w3-button">Arquitetura e organização de computadores</a>
-                        <a href="FWD_exercicio1.html" class="w3-bar-item w3-button">Fundamentos de Web Design</a>
-                        <a href="ING_exercicio1.html" class="w3-bar-item w3-button">Inglês Instrumental</a>
-                        <a href="LP_exercicio1.html" class="w3-bar-item w3-button">Lógica de programação</a>
-                        <a href="MC_Exercicio1.html" class="w3-bar-item w3-button">Metodologia Científica</a>
-                        <a href="SO_exercicio1.html" class="w3-bar-item w3-button">Sistemas Operacionais</a>
-                    </div>
-                </div>
                 <a href="#contact" class="w3-bar-item w3-button w3-padding-24 w3-hide-small">Contato</a>
                 <a href="#" onclick="document.getElementById('id01').style.display = 'block'" class="w3-bar-item w3-hover-red w3-right w3-button w3-padding-24 w3-hide-small">Sair</a>
             </div>
@@ -55,7 +43,7 @@
         </div>
 
         <!-- Page Container -->
-        <div class="w3-content w3-margin-top w3-padding-64	" style="max-width:1400px;">	
+        <div class="w3-content w3-margin-top w3-padding-64" style="max-width:1400px;">	
 
             <!-- The Grid -->
             <div class="w3-row-padding">
@@ -68,10 +56,6 @@
                             <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-user-circle-o fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i><%= usuario%></h2>
                         </div>
                         <div class="w3-container">
-                            <p><i class="fa fa-user fa-fw w3-margin-right w3-large w3-text-teal"></i>Username</p>
-                            <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>Email</p>
-                            <hr>
-
                             <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Cursos em andamento</b></p>
                             <p>Sistemas Operacionais</p>
                             <div class="w3-light-grey w3-round-xlarge w3-small">
@@ -126,68 +110,154 @@
                     <!-- End Left Column -->
                 </div>
 
-                <!-- Right Column 
+                <!-- Right Column -->
                 <div class="w3-twothird">
 
-                    <div class="w3-container w3-card w3-white w3-margin-bottom">
-                        <div class="w3-container">
-                            <h5 class="w3-opacity"><b>Front End Developer / w3schools.com</b></h5>
-                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jan 2015 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
-                            <p>Lorem ipsum dolor sit amet. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
-                            <hr>
-                        </div>
-                        <div class="w3-container">
-                            <h5 class="w3-opacity"><b>Web Developer / something.com</b></h5>
-                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2012 - Dec 2014</h6>
-                            <p>Consectetur adipisicing elit. Praesentium magnam consectetur vel in deserunt aspernatur est reprehenderit sunt hic. Nulla tempora soluta ea et odio, unde doloremque repellendus iure, iste.</p>
-                            <hr>
-                        </div>
-                        <div class="w3-container">
-                            <h5 class="w3-opacity"><b>Graphic Designer / designsomething.com</b></h5>
-                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2010 - Mar 2012</h6>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p><br>
+
+                    <div  class="w3-container w3-card w3-white w3-margin-bottom">
+                        <h1><button onclick="myFunction('aoc')" class="w3-button w3-hover-white w3-block w3-white w3-center">Arquitetura e organização de computadores</button></h1>
+                        <div id="aoc" class=" w3-hide">
+                            <div class="w3-container w3-half">
+                                <h5 class="w3-opacity"><b>Aula 1</b></h5>
+                                <h1><i class="fa fa-youtube-play fa-fw w3-margin-right w3-text-red"></i><a href="exercicios/AOC_exercicio1.html" target="_blank"><i class="fa fa-book fa-fw w3-margin-right w3-text-dark-gray"></a></i><i class="fa fa-certificate w3-margin-right w3-text-dark-gray" aria-hidden="true"></i></h1>
+                                <p>Nesta primeira aula você aprenderá sobre as funções básicas da interação entre um sistema operacional e um computador.</p>
+                                <hr>
+                            </div>
+                            <div class="w3-container w3-half">
+                                <h5 class="w3-opacity"><b>Aula 2</b></h5>
+                                <h1><i class="fa fa-youtube-play fa-fw w3-margin-right w3-text-red"></i><a href="exercicios/AOC_exercicio2.html" target="_blank"><i class="fa fa-book fa-fw w3-margin-right w3-text-dark-gray"></a></i><i class="fa fa-certificate w3-margin-right w3-text-dark-gray" aria-hidden="true"></i></h1>
+                                <p>Ao finalizar esta aula você estará pronto para realizar os exercícios e poderá emitir seu certificado.</p>
+                                <hr>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="w3-container w3-card w3-white">
-                        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
-                        <div class="w3-container">
-                            <h5 class="w3-opacity"><b>W3Schools.com</b></h5>
-                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Forever</h6>
-                            <p>Web Development! All I need to know in one place</p>
-                            <hr>
-                        </div>
-                        <div class="w3-container">
-                            <h5 class="w3-opacity"><b>London Business School</b></h5>
-                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2013 - 2015</h6>
-                            <p>Master Degree</p>
-                            <hr>
-                        </div>
-                        <div class="w3-container">
-                            <h5 class="w3-opacity"><b>School of Coding</b></h5>
-                            <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2010 - 2013</h6>
-                            <p>Bachelor Degree</p><br>
+                    
+                     <div  class="w3-container w3-card w3-white w3-margin-bottom">
+                        <h1><button onclick="myFunction('so')" class="w3-button w3-hover-white w3-block w3-white w3-center">Sistemas Operacionais</button></h1>
+                        <div id="so" class=" w3-hide">
+                            <div class="w3-container w3-half">
+                                <h5 class="w3-opacity"><b>Aula 1</b></h5>
+                                <h1><a href="videoAulas/aocAula1.html" target="_blank"><i class="fa fa-youtube-play fa-fw w3-margin-right w3-text-red"></a></i><a href="exercicios/SO_exercicio2.html" target="_blank"></i><i class="fa fa-book fa-fw w3-margin-right w3-text-dark-gray"></a></i><i class="fa fa-certificate w3-margin-right w3-text-dark-gray" aria-hidden="true"></i></h1>
+                                <p>Nesta primeira aula você aprenderá sobre as funções básicas da interação entre um sistema operacional e um computador.</p>
+                                <hr>
+                            </div>
+                            <div class="w3-container w3-half">
+                                <h5 class="w3-opacity"><b>Aula 2</b></h5>
+                                <h1><i class="fa fa-youtube-play fa-fw w3-margin-right w3-text-red"></i><a href="exercicios/SO_exercicio2.html" target="_blank"><i class="fa fa-book fa-fw w3-margin-right w3-text-dark-gray"></a></i><i class="fa fa-certificate w3-margin-right w3-text-dark-gray" aria-hidden="true"></i></h1>
+                                <p>Ao finalizar esta aula você estará pronto para realizar os exercícios e poderá emitir seu certificado.</p>
+                                <hr>
+                            </div>
                         </div>
                     </div>
+                    
 
-                    <!-- End Right Column -->
-                </div>
-
-                <!-- End Grid -->
+                    <div  class="w3-container w3-card w3-white w3-margin-bottom">
+                        <h1><button onclick="myFunction('logica')" class="w3-button w3-hover-white w3-block w3-white w3-center">Lógica de programação</button></h1>
+                        <div id="logica" class=" w3-hide">
+                            <div class="w3-container w3-half">
+                                <h5 class="w3-opacity"><b>Aula 1</b></h5>
+                                <h1><i class="fa fa-youtube-play fa-fw w3-margin-right w3-text-red"></i><a href="exercicios/LP_exercicio1.html" target="_blank"><i class="fa fa-book fa-fw w3-margin-right w3-text-dark-gray"></a></i><i class="fa fa-certificate w3-margin-right w3-text-dark-gray" aria-hidden="true"></i></h1>
+                                <p>Nesta primeira aula você aprenderá sobre as funções básicas da interação entre um sistema operacional e um computador.</p>
+                                <hr>
+                            </div>
+                            <div class="w3-container w3-half">
+                                <h5 class="w3-opacity"><b>Aula 2</b></h5>
+                                <h1><i class="fa fa-youtube-play fa-fw w3-margin-right w3-text-red"></i><a href="exercicios/LP_Exercicio2.html" target="_blank"><i class="fa fa-book fa-fw w3-margin-right w3-text-dark-gray"></a></i><i class="fa fa-certificate w3-margin-right w3-text-dark-gray" aria-hidden="true"></i></h1>
+                                <p>Ao finalizar esta aula você estará pronto para realizar os exercícios e poderá emitir seu certificado.</p>
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+                    
+                     <div  class="w3-container w3-card w3-white w3-margin-bottom">
+                        <h1><button onclick="myFunction('metodologia')" class="w3-button w3-hover-white w3-block w3-white w3-center">Metodologia Científica</button></h1>
+                        <div id="metodologia" class=" w3-hide">
+                            <div class="w3-container w3-half">
+                                <h5 class="w3-opacity"><b>Aula 1</b></h5>
+                                <h1><i class="fa fa-youtube-play fa-fw w3-margin-right w3-text-red"></i><a href="exercicios/MC_exercicio1.html" target="_blank"><i class="fa fa-book fa-fw w3-margin-right w3-text-dark-gray"></a></i><i class="fa fa-certificate w3-margin-right w3-text-dark-gray" aria-hidden="true"></i></h1>
+                                <p>Nesta primeira aula você aprenderá sobre as funções básicas da interação entre um sistema operacional e um computador.</p>
+                                <hr>
+                            </div>
+                            <div class="w3-container w3-half">
+                                <h5 class="w3-opacity"><b>Aula 2</b></h5>
+                                <h1><i class="fa fa-youtube-play fa-fw w3-margin-right w3-text-red"></i><a href="exercicios/LP_Exercicio2.html" target="_blank"><i class="fa fa-book fa-fw w3-margin-right w3-text-dark-gray"></a></i><i class="fa fa-certificate w3-margin-right w3-text-dark-gray" aria-hidden="true"></i></h1>
+                                <p>Ao finalizar esta aula você estará pronto para realizar os exercícios e poderá emitir seu certificado.</p>
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+                    
+                     <div  class="w3-container w3-card w3-white w3-margin-bottom">
+                        <h1><button onclick="myFunction('ingles')" class="w3-button w3-hover-white w3-block w3-white w3-center">Inglês Instrumental</button></h1>
+                        <div id="ingles" class=" w3-hide">
+                            <div class="w3-container w3-half">
+                                <h5 class="w3-opacity"><b>Aula 1</b></h5>
+                                <h1><i class="fa fa-youtube-play fa-fw w3-margin-right w3-text-red"></i><a href="exercicios/ING_exercicio1.html" target="_blank"><i class="fa fa-book fa-fw w3-margin-right w3-text-dark-gray"></a></i><i class="fa fa-certificate w3-margin-right w3-text-dark-gray" aria-hidden="true"></i></h1>
+                                <p>Nesta primeira aula você aprenderá sobre as funções básicas da interação entre um sistema operacional e um computador.</p>
+                                <hr>
+                            </div>
+                            <div class="w3-container w3-half">
+                                <h5 class="w3-opacity"><b>Aula 2</b></h5>
+                                <h1><i class="fa fa-youtube-play fa-fw w3-margin-right w3-text-red"></i><a href="exercicios/ING_exercicio2.html" target="_blank"><i class="fa fa-book fa-fw w3-margin-right w3-text-dark-gray"></a></i><i class="fa fa-certificate w3-margin-right w3-text-dark-gray" aria-hidden="true"></i></h1>
+                                <p>Ao finalizar esta aula você estará pronto para realizar os exercícios e poderá emitir seu certificado.</p>
+                                <hr>
+                            </div>
+                        </div>
+                     </div>
+                    
+                     <div  class="w3-container w3-card w3-white w3-margin-bottom">
+                        <h1><button onclick="myFunction('fundamentos')" class="w3-button w3-hover-white w3-block w3-white w3-center">Fundamentos de Web Design</i></button></h1>
+                        <div id="fundamentos" class=" w3-hide">
+                            <div class="w3-container w3-half">
+                                <h5 class="w3-opacity"><b>Aula 1</b></h5>
+                                <h1><i class="fa fa-youtube-play fa-fw w3-margin-right w3-text-red"></i><a href="exercicios/FWD_exercicio1.html" target="_blank"><i class="fa fa-book fa-fw w3-margin-right w3-text-dark-gray"></a></i><i class="fa fa-certificate w3-margin-right w3-text-dark-gray" aria-hidden="true"></i></h1>
+                                <p>Nesta primeira aula você aprenderá sobre as funções básicas da interação entre um sistema operacional e um computador.</p>
+                                <hr>
+                            </div>
+                            <div class="w3-container w3-half">
+                                <h5 class="w3-opacity"><b>Aula 2</b></h5>
+                                <h1><i class="fa fa-youtube-play fa-fw w3-margin-right w3-text-red"></i><a href="exercicios/FWD_exercicio2.html" target="_blank"><i class="fa fa-book fa-fw w3-margin-right w3-text-dark-gray"></a></i><i class="fa fa-certificate w3-margin-right w3-text-dark-gray" aria-hidden="true"></i></h1>
+                                <p>Ao finalizar esta aula você estará pronto para realizar os exercícios e poderá emitir seu certificado.</p>
+                                <hr>
+                            </div>
+                        </div>
+                     </div>
+                    
+                    
+                        
+                    </div>
+                    
+                <!-- End Right Column -->
             </div>
 
-            <!-- End Page Container -->
+            <!-- End Grid -->
         </div>
 
-        <!-- Footer -->
-        <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-black w3-xlarge">
-            <i class="fa fa-facebook-official w3-hover-opacity"></i>
-            <i class="fa fa-instagram w3-hover-opacity"></i>
-            <i class="fa fa-snapchat w3-hover-opacity"></i>
-            <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-            <i class="fa fa-twitter w3-hover-opacity"></i>
-            <i class="fa fa-linkedin w3-hover-opacity"></i>
-            <p class="w3-medium">Todos os direitos reservados</p>
-        </footer>
-    </body>
+        <!-- End Page Container -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-black w3-xlarge">
+        <i class="fa fa-facebook-official w3-hover-opacity"></i>
+        <i class="fa fa-instagram w3-hover-opacity"></i>
+        <i class="fa fa-snapchat w3-hover-opacity"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+        <i class="fa fa-twitter w3-hover-opacity"></i>
+        <i class="fa fa-linkedin w3-hover-opacity"></i>
+        <p class="w3-medium">Todos os direitos reservados</p>
+    </footer>
+
+    <script>
+        function myFunction(id) {
+            var x = document.getElementById(id);
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+        
+        
+    </script>
+</body>
 </html>
